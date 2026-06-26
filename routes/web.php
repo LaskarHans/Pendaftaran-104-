@@ -7,5 +7,10 @@ Route::get('/', function () {
 });
 
 Route::get('/register', function () {
-    return view('welcome');
+    return view('form');
 });
+
+Route::get('/validate', function () {
+    return view('validate');
+});
+
