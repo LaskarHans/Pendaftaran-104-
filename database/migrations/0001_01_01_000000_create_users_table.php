@@ -14,26 +14,24 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
 
-        Schema::create('password_reset_tokens', function (Blueprint $table) {
-            $table->string('email')->primary();
-            $table->string('token');
-            $table->timestamp('created_at')->nullable();
-        });
 
-        Schema::create('sessions', function (Blueprint $table) {
-            $table->string('id')->primary();
-            $table->foreignId('user_id')->nullable()->index();
-            $table->string('ip_address', 45)->nullable();
-            $table->text('user_agent')->nullable();
-            $table->longText('payload');
-            $table->integer('last_activity')->index();
+        Schema::create('student', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');  // Nama Siswa
+            $table->string('school_name'); // Asal Sekolah
+            $table->enum('gender',['L','P']); // Kelamin
+            $table->string('grade'); // Kelas
+            $table->string('number'); // No Telp Siswa
+            $table->string('email'); // Email Siswa
+            $table->date('birthday'); // Tanggal Lahir
+            $table->string('parent_name'); // Nama Orang Tua
+            $table->string('parent_number'); // No Telp Orang Tua
+            $table->string('address'); // Alamat Tempat Tinggal
+            $table->timestamps(); // Informasi Waktu Data
         });
     }
 

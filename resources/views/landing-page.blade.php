@@ -12,7 +12,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
     </head>
     <body>
-        <h1>Selamat Datang di web hunter test104!</h1>
+        <h1>Selamat Datang di hunter test104!</h1>
         <button type="submit"><a href="validate">Daftar</a></button>
     </body>
 </html>

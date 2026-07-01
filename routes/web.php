@@ -14,3 +14,11 @@ Route::get('/validate', function () {
     return view('validate');
 });
 
+Route::get('/user', function () {
+    return view('user');
+});
+
+
+
+
+
