@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Form</title>
 </head>
 <body>
-    
+    <h1>VIEW FORM</h1>
 </body>
 </html>
