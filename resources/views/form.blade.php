@@ -6,6 +6,8 @@
     <title>Form</title>
 </head>
 <body>
+
     <h1>VIEW FORM</h1>
+
 </body>
-</html>
+</html>`

@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1>Selamat Datang di landing page hunter 104! </h1>
-        <button type="submit"><a href="validate">Daftar</a></button>
+        <button type="submit"><a href="form">Daftar</a></button>
     </body>
 </html>
